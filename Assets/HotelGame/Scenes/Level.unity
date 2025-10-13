@@ -5613,6 +5613,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 4084718371245397547}
+  useSmoothing: 0
+  smoothSpeed: 5
+  useSmoothDamp: 0
+  smoothDampTime: 0.3
+  useCameraShake: 0
+  shakeAmount: 0.02
+  shakeSpeed: 1
+  useBoundaries: 0
+  minBounds: {x: -10, y: -10}
+  maxBounds: {x: 10, y: 10}
 --- !u!1 &985436307
 GameObject:
   m_ObjectHideFlags: 0
@@ -17503,7 +17513,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &7948846070944353364
@@ -17521,6 +17531,20 @@ MonoBehaviour:
   joystick: {fileID: 1495407966}
   moveSpeed: 5
   rotationSpeed: 10
+  useAcceleration: 1
+  acceleration: 10
+  deceleration: 100
+  smoothInput: 1
+  inputSmoothSpeed: 10
+  useSlerp: 1
+  useDeadzone: 1
+  customDeadzone: 0.1
+  useInputBuffer: 1
+  bufferTime: 0.1
+  useFootsteps: 0
+  audioSource: {fileID: 0}
+  footstepSounds: []
+  footstepInterval: 0.5
 --- !u!136 &7948846070944353365
 CapsuleCollider:
   m_ObjectHideFlags: 0
