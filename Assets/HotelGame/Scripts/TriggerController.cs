@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using DG.Tweening;
 
 public class TriggerController : MonoBehaviour
 {
@@ -12,6 +13,12 @@ public class TriggerController : MonoBehaviour
     public Image redCircle;
     public GameObject progressUI;
     
+    [Header("Animation Settings")]
+    public float scaleAnimDuration = 0.3f;
+    public float vibrateInterval = 2f;
+    public float vibrateStrength = 0.1f;
+    public float vibrateDuration = 0.3f;
+    
     [Header("Interaction")]
     public UnityEvent onInteractionComplete;
     public UnityEvent<bool> onCanInteractChanged;
@@ -21,6 +28,19 @@ public class TriggerController : MonoBehaviour
     
     private bool playerInZone = false;
     private bool canInteract = true;
+    private bool uiVisible = false;
+    private Vector3 originalScale;
+    private Sequence vibrateSequence;
+    private float vibrateTimer;
+
+    void Start()
+    {
+        if (progressUI != null)
+        {
+            originalScale = progressUI.transform.localScale;
+            progressUI.transform.localScale = Vector3.zero;
+        }
+    }
 
     void Update()
     {
@@ -45,11 +65,35 @@ public class TriggerController : MonoBehaviour
         {
             redCircle.fillAmount = progress;
         }
+
+        if (uiVisible && !playerInZone && progressUI != null && progressUI.transform.localScale == originalScale)
+        {
+            vibrateTimer += Time.deltaTime;
+            if (vibrateTimer >= vibrateInterval)
+            {
+                vibrateTimer = 0f;
+                PlayVibrateAnimation();
+            }
+        }
     }
 
     public void SetPlayerInZone(bool inZone)
     {
         playerInZone = inZone;
+        
+        if (progressUI != null && uiVisible)
+        {
+            if (inZone)
+            {
+                vibrateSequence?.Kill();
+                progressUI.transform.DOScale(originalScale * 1.2f, scaleAnimDuration).SetEase(Ease.OutBack);
+            }
+            else
+            {
+                progressUI.transform.DOScale(originalScale, scaleAnimDuration).SetEase(Ease.InOutQuad);
+                vibrateTimer = 0f;
+            }
+        }
     }
 
     public void SetCanInteract(bool value)
@@ -66,8 +110,49 @@ public class TriggerController : MonoBehaviour
         }
     }
 
+    public void ShowUI(bool show)
+    {
+        if (uiVisible == show) return;
+        
+        uiVisible = show;
+        
+        if (progressUI == null) return;
+        
+        vibrateSequence?.Kill();
+        progressUI.transform.DOKill();
+        vibrateTimer = 0f;
+        
+        if (show)
+        {
+            progressUI.transform.DOScale(originalScale, scaleAnimDuration).SetEase(Ease.OutBack);
+        }
+        else
+        {
+            progressUI.transform.DOScale(Vector3.zero, scaleAnimDuration).SetEase(Ease.InBack);
+        }
+    }
+
+    private void PlayVibrateAnimation()
+    {
+        if (progressUI == null) return;
+        
+        vibrateSequence?.Kill();
+        vibrateSequence = DOTween.Sequence();
+        vibrateSequence.Append(progressUI.transform.DOScale(originalScale * (1f + vibrateStrength), vibrateDuration * 0.5f).SetEase(Ease.OutQuad));
+        vibrateSequence.Append(progressUI.transform.DOScale(originalScale, vibrateDuration * 0.5f).SetEase(Ease.InOutQuad));
+    }
+
     public bool CanInteract()
     {
         return canInteract;
+    }
+
+    void OnDestroy()
+    {
+        vibrateSequence?.Kill();
+        if (progressUI != null)
+        {
+            progressUI.transform.DOKill();
+        }
     }
 }

@@ -4549,6 +4549,10 @@ MonoBehaviour:
   decreaseSpeed: 2
   redCircle: {fileID: 1972607874}
   progressUI: {fileID: 403792548}
+  scaleAnimDuration: 0.3
+  vibrateInterval: 2
+  vibrateStrength: 0.1
+  vibrateDuration: 0.3
   onInteractionComplete:
     m_PersistentCalls:
       m_Calls: []

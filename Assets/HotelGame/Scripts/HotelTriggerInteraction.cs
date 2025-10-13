@@ -18,7 +18,9 @@ public class HotelTriggerInteraction : MonoBehaviour
     {
         if (triggerController != null)
         {
-            triggerController.SetCanInteract(HotelController.Instance.CanInteract());
+            bool canInteract = HotelController.Instance.CanInteract();
+            triggerController.SetCanInteract(canInteract);
+            triggerController.ShowUI(canInteract);
         }
     }
 
