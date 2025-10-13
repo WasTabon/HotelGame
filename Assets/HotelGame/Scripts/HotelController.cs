@@ -15,6 +15,8 @@ public class Room
 
 public class HotelController : MonoBehaviour
 {
+    public static HotelController Instance;
+    
     public List<Room> rooms;
     public List<GameObject> guestPrefabs;
     public Transform spawnPosition;
@@ -22,6 +24,11 @@ public class HotelController : MonoBehaviour
 
     private GuestController currentGuest;
     private bool isQueueFree = true;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
