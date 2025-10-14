@@ -8,6 +8,7 @@ public class RoomBuyTrigger : MonoBehaviour
     
     private TriggerController triggerController;
     private Room targetRoom;
+    private bool hasBought = false;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class RoomBuyTrigger : MonoBehaviour
 
     void Update()
     {
-        if (triggerController != null && targetRoom != null)
+        if (triggerController != null && targetRoom != null && !hasBought)
         {
             bool canBuy = WalletController.Instance.Money >= cost && !targetRoom.isBuilded;
             triggerController.SetCanInteract(canBuy);
@@ -52,8 +53,9 @@ public class RoomBuyTrigger : MonoBehaviour
 
     void OnBuyComplete()
     {
-        if (targetRoom != null && WalletController.Instance.Money >= cost)
+        if (targetRoom != null && WalletController.Instance.Money >= cost && !hasBought)
         {
+            hasBought = true;
             WalletController.Instance.Money -= cost;
             HotelController.Instance.BuyRoom(targetRoom);
             HideTrigger();
