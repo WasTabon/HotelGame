@@ -26,10 +26,12 @@ public class HotelController : MonoBehaviour
 
     private GuestController currentGuest;
     private bool isQueueFree = true;
+    private RoomBuildAnimation buildAnimation;
 
     private void Awake()
     {
         Instance = this;
+        buildAnimation = gameObject.AddComponent<RoomBuildAnimation>();
     }
 
     void Start()
@@ -45,25 +47,32 @@ public class HotelController : MonoBehaviour
             if (room.room != null)
             {
                 room.room.SetActive(true);
-                UpdateRoomState(room);
+                UpdateRoomState(room, false);
             }
         }
     }
 
-    private void UpdateRoomState(Room room)
+    private void UpdateRoomState(Room room, bool animate)
     {
         if (room.room == null) return;
 
         if (room.isBuilded)
         {
-            foreach (Transform child in room.room.transform)
+            if (animate)
             {
-                child.gameObject.SetActive(true);
+                buildAnimation.PlayBuildAnimation(room.room, room.wall);
             }
-            
-            if (room.wall != null)
+            else
             {
-                room.wall.SetActive(false);
+                foreach (Transform child in room.room.transform)
+                {
+                    child.gameObject.SetActive(true);
+                }
+                
+                if (room.wall != null)
+                {
+                    room.wall.SetActive(false);
+                }
             }
         }
         else
@@ -85,7 +94,7 @@ public class HotelController : MonoBehaviour
         if (room != null && !room.isBuilded)
         {
             room.isBuilded = true;
-            UpdateRoomState(room);
+            UpdateRoomState(room, true);
             Debug.Log($"Room {room.room.name} has been purchased!");
         }
     }
@@ -95,7 +104,7 @@ public class HotelController : MonoBehaviour
         if (room != null)
         {
             room.isBuilded = true;
-            UpdateRoomState(room);
+            UpdateRoomState(room, false);
         }
     }
 
