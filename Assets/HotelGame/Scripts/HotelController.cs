@@ -11,6 +11,7 @@ public class Room
     public Transform roomPos;
     public bool isLive;
     public bool isBuilded;
+    public bool isLeft;
 }
 
 public class HotelController : MonoBehaviour
@@ -33,6 +34,8 @@ public class HotelController : MonoBehaviour
     void Start()
     {
         SpawnGuest();
+        
+        // зробити анімацію сидіння гостей, зробити прибирання в кімнатах, зробити покупку кімнат
     }
 
     public void SpawnGuest()

@@ -1,10 +1,12 @@
 using UnityEngine;
+using DG.Tweening;
 
 [RequireComponent(typeof(Rigidbody))]
 public class GuestController : MonoBehaviour
 {
     public float moveSpeed = 3f;
     public float rotationSpeed = 5f;
+    public float finalRotationDuration = 0.5f;
 
     private HotelController hotelController;
     private Animator animator;
@@ -95,8 +97,25 @@ public class GuestController : MonoBehaviour
                 movingToRoom = false;
                 isMoving = false;
                 SetAnimatorMoving(false);
+                RotateAndSit();
             }
         }
+    }
+
+    private void RotateAndSit()
+    {
+        rb.freezeRotation = true;
+        
+        Quaternion targetRotation = Quaternion.Euler(0, -90, 0);
+        transform.DORotateQuaternion(targetRotation, finalRotationDuration)
+            .SetEase(Ease.InOutQuad)
+            .OnComplete(() =>
+            {
+                if (animator != null)
+                {
+                    animator.SetTrigger("sit");
+                }
+            });
     }
 
     public bool IsAtWaitingPoint()
@@ -110,5 +129,10 @@ public class GuestController : MonoBehaviour
         {
             animator.SetBool("isMove", moving);
         }
+    }
+
+    void OnDestroy()
+    {
+        transform.DOKill();
     }
 }
