@@ -5273,10 +5273,9 @@ GameObject:
   - component: {fileID: 752074778}
   - component: {fileID: 752074777}
   - component: {fileID: 752074776}
-  - component: {fileID: 752074775}
   m_Layer: 0
   m_Name: BedSet
-  m_TagString: HotelWait
+  m_TagString: Bed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5297,18 +5296,6 @@ Transform:
   - {fileID: 2002668780}
   m_Father: {fileID: 2146041671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &752074775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752074773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9099780973a846840936ff522babf865, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &752074776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7644,10 +7631,9 @@ GameObject:
   - component: {fileID: 1154584063}
   - component: {fileID: 1154584062}
   - component: {fileID: 1154584061}
-  - component: {fileID: 1154584060}
   m_Layer: 0
   m_Name: WaterSet
-  m_TagString: HotelWait
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7668,18 +7654,6 @@ Transform:
   - {fileID: 1668112511}
   m_Father: {fileID: 2127834674}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1154584060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154584058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9099780973a846840936ff522babf865, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1154584061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9712,26 +9686,13 @@ GameObject:
   - component: {fileID: 1478459028}
   - component: {fileID: 1478459027}
   - component: {fileID: 1478459026}
-  - component: {fileID: 1478459025}
   m_Layer: 0
   m_Name: WaterSet
-  m_TagString: HotelWait
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1478459025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1478459024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9099780973a846840936ff522babf865, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1478459026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10768,6 +10729,7 @@ MonoBehaviour:
     isLive: 0
     isBuilded: 1
     isLeft: 0
+    roomController: {fileID: 2127834675}
   - room: {fileID: 0}
     wall: {fileID: 0}
     entryPos: {fileID: 642127186}
@@ -10775,6 +10737,7 @@ MonoBehaviour:
     isLive: 0
     isBuilded: 1
     isLeft: 0
+    roomController: {fileID: 2146041672}
   guestPrefabs:
   - {fileID: 6786045551717815701, guid: d2f99ac4e0824a44d81e263e776637b3, type: 3}
   spawnPosition: {fileID: 1012083597}
@@ -15633,10 +15596,9 @@ GameObject:
   - component: {fileID: 2081120792}
   - component: {fileID: 2081120791}
   - component: {fileID: 2081120790}
-  - component: {fileID: 2081120789}
   m_Layer: 0
   m_Name: BedSet
-  m_TagString: HotelWait
+  m_TagString: Bed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15657,18 +15619,6 @@ Transform:
   - {fileID: 985922554}
   m_Father: {fileID: 2127834674}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2081120789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081120787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9099780973a846840936ff522babf865, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2081120790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16137,6 +16087,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ad5a4d8afd93c4899c2279327b7b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bedTrigger: {fileID: 2081120790}
+  waterTrigger: {fileID: 1154584061}
+  minInterval: 5
+  maxInterval: 10
 --- !u!1 &2130076287
 GameObject:
   m_ObjectHideFlags: 0
@@ -16371,6 +16325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ad5a4d8afd93c4899c2279327b7b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bedTrigger: {fileID: 752074776}
+  waterTrigger: {fileID: 1478459026}
+  minInterval: 5
+  maxInterval: 10
 --- !u!4 &30023978026955212
 Transform:
   m_ObjectHideFlags: 0

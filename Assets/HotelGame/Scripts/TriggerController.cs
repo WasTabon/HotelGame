@@ -28,7 +28,7 @@ public class TriggerController : MonoBehaviour
     
     private bool playerInZone = false;
     private bool canInteract = true;
-    private bool uiVisible = false;
+    private bool shouldShowUI = false;
     private Vector3 originalScale;
     private Sequence vibrateSequence;
     private float vibrateTimer;
@@ -44,6 +44,8 @@ public class TriggerController : MonoBehaviour
 
     void Update()
     {
+        bool isUIVisible = shouldShowUI && (playerInZone || !canInteract);
+        
         if (playerInZone && canInteract)
         {
             progress += Time.deltaTime / fillTime;
@@ -66,7 +68,7 @@ public class TriggerController : MonoBehaviour
             redCircle.fillAmount = progress;
         }
 
-        if (uiVisible && !playerInZone && progressUI != null && progressUI.transform.localScale == originalScale)
+        if (shouldShowUI && !playerInZone && progressUI != null && progressUI.transform.localScale == originalScale)
         {
             vibrateTimer += Time.deltaTime;
             if (vibrateTimer >= vibrateInterval)
@@ -81,7 +83,7 @@ public class TriggerController : MonoBehaviour
     {
         playerInZone = inZone;
         
-        if (progressUI != null && uiVisible)
+        if (progressUI != null && shouldShowUI)
         {
             if (inZone)
             {
@@ -112,9 +114,9 @@ public class TriggerController : MonoBehaviour
 
     public void ShowUI(bool show)
     {
-        if (uiVisible == show) return;
+        if (shouldShowUI == show) return;
         
-        uiVisible = show;
+        shouldShowUI = show;
         
         if (progressUI == null) return;
         

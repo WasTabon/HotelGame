@@ -12,6 +12,7 @@ public class Room
     public bool isLive;
     public bool isBuilded;
     public bool isLeft;
+    public RoomController roomController;
 }
 
 public class HotelController : MonoBehaviour
@@ -34,8 +35,6 @@ public class HotelController : MonoBehaviour
     void Start()
     {
         SpawnGuest();
-        
-        // зробити анімацію сидіння гостей, зробити прибирання в кімнатах, зробити покупку кімнат
     }
 
     public void SpawnGuest()
@@ -61,6 +60,12 @@ public class HotelController : MonoBehaviour
         if (availableRoom != null)
         {
             availableRoom.isLive = true;
+            
+            if (availableRoom.roomController != null)
+            {
+                availableRoom.roomController.SetGuestLiving(true);
+            }
+            
             currentGuest.MoveToRoom(availableRoom.entryPos.position, availableRoom.roomPos.position);
         }
     }
