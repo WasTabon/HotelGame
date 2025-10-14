@@ -80,6 +80,16 @@ public class HotelController : MonoBehaviour
         }
     }
 
+    public void BuyRoom(Room room)
+    {
+        if (room != null && !room.isBuilded)
+        {
+            room.isBuilded = true;
+            UpdateRoomState(room);
+            Debug.Log($"Room {room.room.name} has been purchased!");
+        }
+    }
+
     public void BuildRoom(Room room)
     {
         if (room != null)
