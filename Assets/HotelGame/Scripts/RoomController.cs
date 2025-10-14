@@ -35,7 +35,7 @@ public class RoomController : MonoBehaviour
 
     void Update()
     {
-        if (!gameObject.activeInHierarchy || !isGuestLiving)
+        if (!isGuestLiving)
             return;
         
         if (activeTrigger == null && Time.time >= nextTriggerTime)

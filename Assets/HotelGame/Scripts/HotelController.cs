@@ -34,7 +34,59 @@ public class HotelController : MonoBehaviour
 
     void Start()
     {
+        InitializeRooms();
         SpawnGuest();
+    }
+
+    private void InitializeRooms()
+    {
+        foreach (Room room in rooms)
+        {
+            if (room.room != null)
+            {
+                room.room.SetActive(true);
+                UpdateRoomState(room);
+            }
+        }
+    }
+
+    private void UpdateRoomState(Room room)
+    {
+        if (room.room == null) return;
+
+        if (room.isBuilded)
+        {
+            foreach (Transform child in room.room.transform)
+            {
+                child.gameObject.SetActive(true);
+            }
+            
+            if (room.wall != null)
+            {
+                room.wall.SetActive(false);
+            }
+        }
+        else
+        {
+            foreach (Transform child in room.room.transform)
+            {
+                child.gameObject.SetActive(false);
+            }
+            
+            if (room.wall != null)
+            {
+                room.wall.SetActive(true);
+            }
+        }
+    }
+
+    public void BuildRoom(Room room)
+    {
+        if (room != null)
+        {
+            room.isBuilded = true;
+            UpdateRoomState(room);
+        }
     }
 
     public void SpawnGuest()

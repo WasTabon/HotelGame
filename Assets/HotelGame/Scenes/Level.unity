@@ -860,7 +860,7 @@ GameObject:
   - component: {fileID: 77469096}
   - component: {fileID: 77469095}
   m_Layer: 0
-  m_Name: SM_Bld_Base_Wall_01 (35)
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16294,32 +16294,32 @@ MonoBehaviour:
     roomPos: {fileID: 347520537}
     isLive: 0
     isBuilded: 0
-    isLeft: 0
+    isLeft: 1
     roomController: {fileID: 1816881336}
   - room: {fileID: 1991983944}
-    wall: {fileID: 0}
-    entryPos: {fileID: 642127186}
-    roomPos: {fileID: 1086286354}
+    wall: {fileID: 77469094}
+    entryPos: {fileID: 801644153}
+    roomPos: {fileID: 1447208487}
     isLive: 0
-    isBuilded: 1
+    isBuilded: 0
     isLeft: 0
     roomController: {fileID: 2146041672}
-  - room: {fileID: 0}
-    wall: {fileID: 0}
-    entryPos: {fileID: 642127186}
-    roomPos: {fileID: 1086286354}
+  - room: {fileID: 1111961263}
+    wall: {fileID: 2107344877}
+    entryPos: {fileID: 1227012273}
+    roomPos: {fileID: 1780834488}
     isLive: 0
-    isBuilded: 1
-    isLeft: 0
-    roomController: {fileID: 2146041672}
-  - room: {fileID: 0}
-    wall: {fileID: 0}
-    entryPos: {fileID: 642127186}
-    roomPos: {fileID: 1086286354}
+    isBuilded: 0
+    isLeft: 1
+    roomController: {fileID: 1111961264}
+  - room: {fileID: 886547620}
+    wall: {fileID: 985436307}
+    entryPos: {fileID: 138013103}
+    roomPos: {fileID: 1910515901}
     isLive: 0
-    isBuilded: 1
+    isBuilded: 0
     isLeft: 0
-    roomController: {fileID: 2146041672}
+    roomController: {fileID: 886547621}
   guestPrefabs:
   - {fileID: 6786045551717815701, guid: d2f99ac4e0824a44d81e263e776637b3, type: 3}
   spawnPosition: {fileID: 1012083597}
