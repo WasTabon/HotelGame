@@ -38,6 +38,8 @@ public class HotelController : MonoBehaviour
     {
         InitializeRooms();
         SpawnGuest();
+        
+        // доробити анімації прибирання номерів, добавити прокачку, добавити казино
     }
 
     private void InitializeRooms()
