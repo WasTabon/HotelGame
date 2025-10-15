@@ -14,6 +14,9 @@ public class UpgradeController : MonoBehaviour
 {
     public static UpgradeController Instance;
 
+    public GameObject haveNoMoneyPanel;
+    public GameObject maxLevelPanel;
+    
     [Header("Casino Upgrades")]
     public List<UpgradeLevel> casinoUpgrades;
     public TextMeshProUGUI casinoLevelText;
@@ -46,12 +49,14 @@ public class UpgradeController : MonoBehaviour
         if (WalletController.Instance.Money < upgradeCost)
         {
             Debug.Log("Not enough money to upgrade casino!");
+            haveNoMoneyPanel.SetActive(true);
             return;
         }
 
         if (currentCasinoLevel >= casinoUpgrades.Count)
         {
             Debug.Log("Casino is already at max level!");
+            maxLevelPanel.SetActive(true);
             return;
         }
 
@@ -69,12 +74,14 @@ public class UpgradeController : MonoBehaviour
         if (WalletController.Instance.Money < upgradeCost)
         {
             Debug.Log("Not enough money to upgrade hotel!");
+            haveNoMoneyPanel.SetActive(true);
             return;
         }
 
         if (currentHotelLevel >= hotelUpgrades.Count)
         {
             Debug.Log("Hotel is already at max level!");
+            maxLevelPanel.SetActive(true);
             return;
         }
 
