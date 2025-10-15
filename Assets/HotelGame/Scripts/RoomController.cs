@@ -70,12 +70,14 @@ public class RoomController : MonoBehaviour
     private void OnBedInteractionComplete()
     {
         Debug.Log($"Bed interaction completed in room {gameObject.name}");
+        WalletController.Instance.Money += 10;
         DeactivateCurrentTrigger();
     }
 
     private void OnWaterInteractionComplete()
     {
         Debug.Log($"Water interaction completed in room {gameObject.name}");
+        WalletController.Instance.Money += 10;
         DeactivateCurrentTrigger();
     }
 
