@@ -24,4 +24,10 @@ public class WalletController : MonoBehaviour
         
         _money = PlayerPrefs.GetInt("money", 100);
     }
+
+    [ContextMenu("Add Money")]
+    public void AddMoney()
+    {
+        Money += 500;
+    }
 }
