@@ -1,10 +1,31 @@
 using UnityEngine;
+using DG.Tweening;
+using System;
+using System.Collections.Generic;
+using Random = UnityEngine.Random;
+
+[Serializable]
+public class TriggerAnimation
+{
+    public Transform objectToMove;
+    public Transform targetTransform;
+    [HideInInspector] public Vector3 originalPosition;
+    [HideInInspector] public Quaternion originalRotation;
+}
 
 public class RoomController : MonoBehaviour
 {
     [Header("Triggers")]
     public TriggerController bedTrigger;
     public TriggerController waterTrigger;
+    
+    [Header("Bed Trigger Animations")]
+    public List<TriggerAnimation> bedAnimations;
+    public float bedAnimationDuration = 0.5f;
+    
+    [Header("Water Trigger Animations")]
+    public List<TriggerAnimation> waterAnimations;
+    public float waterAnimationDuration = 0.5f;
     
     [Header("Settings")]
     public float minInterval = 5f;
@@ -16,6 +37,8 @@ public class RoomController : MonoBehaviour
 
     void Start()
     {
+        SaveOriginalTransforms();
+        
         if (bedTrigger != null)
         {
             bedTrigger.onInteractionComplete.AddListener(OnBedInteractionComplete);
@@ -44,6 +67,27 @@ public class RoomController : MonoBehaviour
         }
     }
 
+    private void SaveOriginalTransforms()
+    {
+        foreach (var anim in bedAnimations)
+        {
+            if (anim.objectToMove != null)
+            {
+                anim.originalPosition = anim.objectToMove.position;
+                anim.originalRotation = anim.objectToMove.rotation;
+            }
+        }
+        
+        foreach (var anim in waterAnimations)
+        {
+            if (anim.objectToMove != null)
+            {
+                anim.originalPosition = anim.objectToMove.position;
+                anim.originalRotation = anim.objectToMove.rotation;
+            }
+        }
+    }
+
     public void SetGuestLiving(bool living)
     {
         isGuestLiving = living;
@@ -64,6 +108,39 @@ public class RoomController : MonoBehaviour
             activeTrigger = selectedTrigger;
             activeTrigger.ShowUI(true);
             activeTrigger.SetCanInteract(true);
+            
+            if (selectedTrigger == bedTrigger)
+            {
+                PlayTriggerAnimations(bedAnimations, bedAnimationDuration);
+            }
+            else if (selectedTrigger == waterTrigger)
+            {
+                PlayTriggerAnimations(waterAnimations, waterAnimationDuration);
+            }
+        }
+    }
+
+    private void PlayTriggerAnimations(List<TriggerAnimation> animations, float duration)
+    {
+        foreach (var anim in animations)
+        {
+            if (anim.objectToMove != null && anim.targetTransform != null)
+            {
+                anim.objectToMove.DOMove(anim.targetTransform.position, duration).SetEase(Ease.OutBack);
+                anim.objectToMove.DORotateQuaternion(anim.targetTransform.rotation, duration).SetEase(Ease.OutBack);
+            }
+        }
+    }
+
+    private void ResetTriggerAnimations(List<TriggerAnimation> animations, float duration)
+    {
+        foreach (var anim in animations)
+        {
+            if (anim.objectToMove != null)
+            {
+                anim.objectToMove.DOMove(anim.originalPosition, duration).SetEase(Ease.InOutQuad);
+                anim.objectToMove.DORotateQuaternion(anim.originalRotation, duration).SetEase(Ease.InOutQuad);
+            }
         }
     }
 
@@ -71,6 +148,7 @@ public class RoomController : MonoBehaviour
     {
         Debug.Log($"Bed interaction completed in room {gameObject.name}");
         WalletController.Instance.Money += 10;
+        ResetTriggerAnimations(bedAnimations, bedAnimationDuration);
         DeactivateCurrentTrigger();
     }
 
@@ -78,6 +156,7 @@ public class RoomController : MonoBehaviour
     {
         Debug.Log($"Water interaction completed in room {gameObject.name}");
         WalletController.Instance.Money += 10;
+        ResetTriggerAnimations(waterAnimations, waterAnimationDuration);
         DeactivateCurrentTrigger();
     }
 
@@ -99,12 +178,14 @@ public class RoomController : MonoBehaviour
         {
             bedTrigger.ShowUI(false);
             bedTrigger.SetCanInteract(false);
+            ResetTriggerAnimations(bedAnimations, bedAnimationDuration);
         }
         
         if (waterTrigger != null)
         {
             waterTrigger.ShowUI(false);
             waterTrigger.SetCanInteract(false);
+            ResetTriggerAnimations(waterAnimations, waterAnimationDuration);
         }
         
         activeTrigger = null;
@@ -118,5 +199,24 @@ public class RoomController : MonoBehaviour
     void OnDisable()
     {
         DeactivateAllTriggers();
+    }
+
+    void OnDestroy()
+    {
+        foreach (var anim in bedAnimations)
+        {
+            if (anim.objectToMove != null)
+            {
+                anim.objectToMove.DOKill();
+            }
+        }
+        
+        foreach (var anim in waterAnimations)
+        {
+            if (anim.objectToMove != null)
+            {
+                anim.objectToMove.DOKill();
+            }
+        }
     }
 }

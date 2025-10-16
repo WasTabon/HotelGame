@@ -1498,6 +1498,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2127834674}
     m_Modifications:
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.057
+      objectReference: {fileID: 0}
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.869
+      objectReference: {fileID: 0}
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.645
+      objectReference: {fileID: 0}
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98369646
+      objectReference: {fileID: 0}
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.17233966
+      objectReference: {fileID: 0}
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.038188998
+      objectReference: {fileID: 0}
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.034380995
+      objectReference: {fileID: 0}
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -19.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 4.922
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876652423464240349, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.985
+      objectReference: {fileID: 0}
     - target: {fileID: 6298048973929617745, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7600002
@@ -1542,6 +1586,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Bed_Double_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7663318811519719448, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.362
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663318811519719448, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663318811519719448, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.744
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663318811519719448, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99486613
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663318811519719448, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.101199806
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663318811519719448, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -11.617
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1550,6 +1618,16 @@ PrefabInstance:
 --- !u!4 &75136959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6298048973929617745, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 75136958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &75136960 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 75136958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &75136964 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7663318811519719448, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
   m_PrefabInstance: {fileID: 75136958}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &76853064
@@ -2616,6 +2694,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111364698}
   m_Mesh: {fileID: -3598478222368968, guid: 08388844e21e4b544b62d16142c89c6b, type: 3}
+--- !u!1 &112371550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112371551}
+  m_Layer: 0
+  m_Name: PillowPos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112371551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112371550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5882635, y: -0, z: -0, w: -0.8086694}
+  m_LocalPosition: {x: 2.2200003, y: 0.705, z: 0.6228261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2127834674}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &121352847
 GameObject:
   m_ObjectHideFlags: 0
@@ -17493,6 +17602,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &744138871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744138872}
+  m_Layer: 0
+  m_Name: TablePos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744138872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744138871}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5128112, y: 0.48685178, z: -0.5128113, w: -0.48685178}
+  m_LocalPosition: {x: 2.1680002, y: -0.022, z: 2.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2127834674}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &751326586
 GameObject:
   m_ObjectHideFlags: 0
@@ -19925,6 +20065,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 651724450}
   waterTrigger: {fileID: 643016467}
+  bedAnimations: []
+  bedAnimationDuration: 0.5
+  waterAnimations: []
+  waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
 --- !u!4 &886547622
@@ -23580,6 +23724,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 1872178741}
   waterTrigger: {fileID: 71735032}
+  bedAnimations: []
+  bedAnimationDuration: 0.5
+  waterAnimations: []
+  waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
 --- !u!4 &1111961265
@@ -25080,6 +25228,37 @@ Transform:
   m_Children:
   - {fileID: 1433527181}
   m_Father: {fileID: 2056510964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1163361308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1163361309}
+  m_Layer: 0
+  m_Name: PillowPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1163361309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163361308}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.60952914, y: -0.30825332, z: -0.27822673, w: -0.6753104}
+  m_LocalPosition: {x: 1.2609997, y: 0.732, z: 0.7118261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2127834674}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1163837931
 PrefabInstance:
@@ -41868,6 +42047,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 1044110527}
   waterTrigger: {fileID: 1693332728}
+  bedAnimations: []
+  bedAnimationDuration: 0.5
+  waterAnimations: []
+  waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
 --- !u!4 &1816881337
@@ -45926,6 +46109,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 1447106108}
   waterTrigger: {fileID: 1322849801}
+  bedAnimations: []
+  bedAnimationDuration: 0.5
+  waterAnimations: []
+  waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
 --- !u!4 &1991983946
@@ -49444,6 +49631,9 @@ Transform:
   - {fileID: 793848331}
   - {fileID: 1334811467}
   - {fileID: 1888840942}
+  - {fileID: 112371551}
+  - {fileID: 1163361309}
+  - {fileID: 744138872}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2127834675
@@ -49460,6 +49650,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 2081120790}
   waterTrigger: {fileID: 1154584061}
+  bedAnimations:
+  - objectToMove: {fileID: 75136964}
+    targetTransform: {fileID: 112371551}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - objectToMove: {fileID: 75136960}
+    targetTransform: {fileID: 1163361309}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  bedAnimationDuration: 0.5
+  waterAnimations:
+  - objectToMove: {fileID: 2060785397}
+    targetTransform: {fileID: 744138872}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
 --- !u!1 &2130076287
@@ -49945,6 +50151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 752074776}
   waterTrigger: {fileID: 1478459026}
+  bedAnimations: []
+  bedAnimationDuration: 0.5
+  waterAnimations: []
+  waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
 --- !u!4 &30023978026955212
