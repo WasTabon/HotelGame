@@ -53,7 +53,7 @@ public class UpgradeController : MonoBehaviour
             return;
         }
 
-        if (currentCasinoLevel >= casinoUpgrades.Count)
+        if (currentCasinoLevel >= casinoUpgrades.Count + 1)
         {
             Debug.Log("Casino is already at max level!");
             maxLevelPanel.SetActive(true);
@@ -78,7 +78,7 @@ public class UpgradeController : MonoBehaviour
             return;
         }
 
-        if (currentHotelLevel >= hotelUpgrades.Count)
+        if (currentHotelLevel >= hotelUpgrades.Count + 1)
         {
             Debug.Log("Hotel is already at max level!");
             maxLevelPanel.SetActive(true);
@@ -98,7 +98,7 @@ public class UpgradeController : MonoBehaviour
     {
         for (int i = 0; i < casinoUpgrades.Count; i++)
         {
-            bool shouldActivate = (i + 1) <= currentCasinoLevel;
+            bool shouldActivate = casinoUpgrades[i].level <= currentCasinoLevel;
             
             foreach (GameObject obj in casinoUpgrades[i].objectsToActivate)
             {
@@ -114,7 +114,7 @@ public class UpgradeController : MonoBehaviour
     {
         for (int i = 0; i < hotelUpgrades.Count; i++)
         {
-            bool shouldActivate = (i + 1) <= currentHotelLevel;
+            bool shouldActivate = hotelUpgrades[i].level <= currentHotelLevel;
             
             foreach (GameObject obj in hotelUpgrades[i].objectsToActivate)
             {
