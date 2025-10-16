@@ -2148,6 +2148,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 291974834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &86672191 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8921401724604877743, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 1028771993}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &86756567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,7 +2711,7 @@ GameObject:
   m_Layer: 0
   m_Name: PillowPos1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3097,6 +3102,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134541087}
   m_Mesh: {fileID: -1070544455615140002, guid: ca7b5653d4395a94887e8bcc04a9049a, type: 3}
+--- !u!1 &135753461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 135753462}
+  m_Layer: 0
+  m_Name: PillowPos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &135753462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135753461}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5882635, y: -0, z: -0, w: -0.8086694}
+  m_LocalPosition: {x: 2.4720001, y: 0.664, z: 2.2740002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1816881337}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &135807896
 GameObject:
   m_ObjectHideFlags: 0
@@ -5062,6 +5098,11 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000007748604, y: 0.8418489, z: -0.061210096}
     m_Extent: {x: 1.0245695, y: 0.94620234, z: 0.27902594}
   m_DirtyAABB: 0
+--- !u!4 &207041836 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8549381915770302506, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 757659776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &208273102
 GameObject:
   m_ObjectHideFlags: 0
@@ -12337,6 +12378,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6527451235384226980, guid: f8c840b33d4c08c42b6e3f9e41320566, type: 3}
   m_PrefabInstance: {fileID: 473320195}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &475521482 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7663318811519719448, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 445051020}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &479646456
 GameObject:
   m_ObjectHideFlags: 0
@@ -12890,6 +12936,37 @@ Transform:
   m_Children:
   - {fileID: 1683376678}
   m_Father: {fileID: 326299770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &493421461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493421462}
+  m_Layer: 0
+  m_Name: TablePos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493421462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493421461}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5128112, y: 0.48685178, z: -0.5128113, w: -0.48685178}
+  m_LocalPosition: {x: 2.038, y: -0.042, z: 0.047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146041671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495503669
 GameObject:
@@ -13866,6 +13943,37 @@ Transform:
   m_Children:
   - {fileID: 1968176795}
   m_Father: {fileID: 121352848}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &551333491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 551333492}
+  m_Layer: 0
+  m_Name: TablePos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &551333492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551333491}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5128112, y: 0.48685178, z: -0.5128113, w: -0.48685178}
+  m_LocalPosition: {x: 2.118, y: -0.042, z: 0.04699993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1816881337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &559360991
 PrefabInstance:
@@ -15122,6 +15230,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &626063486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 626063487}
+  m_Layer: 0
+  m_Name: TablePos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &626063487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626063486}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5128112, y: 0.48685178, z: -0.5128113, w: -0.48685178}
+  m_LocalPosition: {x: 1.699, y: 0.002, z: 2.248}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 886547622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &632918543
 GameObject:
   m_ObjectHideFlags: 0
@@ -16323,6 +16462,37 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   progress: 0
+--- !u!1 &692200025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692200026}
+  m_Layer: 0
+  m_Name: PillowPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692200026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692200025}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.60952914, y: -0.30825332, z: -0.27822673, w: -0.6753104}
+  m_LocalPosition: {x: 1.4699993, y: 0.71299994, z: 2.3590002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111961265}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &695716676
 GameObject:
   m_ObjectHideFlags: 0
@@ -17614,7 +17784,7 @@ GameObject:
   m_Layer: 0
   m_Name: TablePos1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -18769,6 +18939,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1991983946}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &804240212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804240213}
+  m_Layer: 0
+  m_Name: PillowPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804240213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804240212}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.60952914, y: -0.30825332, z: -0.27822673, w: -0.6753104}
+  m_LocalPosition: {x: 1.441, y: 0.717, z: 0.375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 886547622}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &810714686
 GameObject:
@@ -20065,9 +20266,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 651724450}
   waterTrigger: {fileID: 643016467}
-  bedAnimations: []
+  bedAnimations:
+  - objectToMove: {fileID: 86672191}
+    targetTransform: {fileID: 804240213}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - objectToMove: {fileID: 2135383344}
+    targetTransform: {fileID: 1238113330}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   bedAnimationDuration: 0.5
-  waterAnimations: []
+  waterAnimations:
+  - objectToMove: {fileID: 1650589556}
+    targetTransform: {fileID: 626063487}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
@@ -20104,6 +20317,9 @@ Transform:
   - {fileID: 1764666946}
   - {fileID: 1684297956}
   - {fileID: 985436311}
+  - {fileID: 626063487}
+  - {fileID: 804240213}
+  - {fileID: 1238113330}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &897933376
@@ -20517,6 +20733,11 @@ Transform:
   - {fileID: 384881097}
   m_Father: {fileID: 727333900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &913891580 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8921401724604877743, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 1218280763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &917574597
 GameObject:
   m_ObjectHideFlags: 0
@@ -23724,9 +23945,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 1872178741}
   waterTrigger: {fileID: 71735032}
-  bedAnimations: []
+  bedAnimations:
+  - objectToMove: {fileID: 1550780124}
+    targetTransform: {fileID: 2099518640}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - objectToMove: {fileID: 207041836}
+    targetTransform: {fileID: 692200026}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   bedAnimationDuration: 0.5
-  waterAnimations: []
+  waterAnimations:
+  - objectToMove: {fileID: 901329980}
+    targetTransform: {fileID: 1615656976}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
@@ -23763,7 +23996,41 @@ Transform:
   - {fileID: 228848110}
   - {fileID: 1699592466}
   - {fileID: 2107344881}
+  - {fileID: 2099518640}
+  - {fileID: 692200026}
+  - {fileID: 1615656976}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1113954871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113954872}
+  m_Layer: 0
+  m_Name: PillowPos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1113954872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113954871}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5882635, y: -0, z: -0, w: -0.8086694}
+  m_LocalPosition: {x: 2.392, y: 0.664, z: 2.274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146041671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1115274793
 GameObject:
@@ -25241,7 +25508,7 @@ GameObject:
   m_Layer: 0
   m_Name: PillowPos2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -25906,6 +26173,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 372638479}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1201082040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1201082041}
+  m_Layer: 0
+  m_Name: PillowPos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1201082041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201082040}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5882635, y: -0, z: -0, w: -0.8086694}
+  m_LocalPosition: {x: 2.37, y: 0.66, z: 0.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1991983946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1204741804
 GameObject:
@@ -27164,6 +27462,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2146041671}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1238113329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1238113330}
+  m_Layer: 0
+  m_Name: PillowPos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1238113330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238113329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5882635, y: -0, z: -0, w: -0.8086694}
+  m_LocalPosition: {x: 2.4230003, y: 0.732, z: 0.3870002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 886547622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1239738533
 GameObject:
   m_ObjectHideFlags: 0
@@ -29272,6 +29601,11 @@ Transform:
   - {fileID: 1743681898}
   m_Father: {fileID: 291974834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1313359431 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4876652423464240349, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 721726392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1319616027
 GameObject:
   m_ObjectHideFlags: 0
@@ -34355,6 +34689,11 @@ Transform:
   - {fileID: 1242424206}
   m_Father: {fileID: 517811368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1550780124 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4876652423464240349, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 757659776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1553062148
 GameObject:
   m_ObjectHideFlags: 0
@@ -36230,6 +36569,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613776042}
   m_Mesh: {fileID: -3598478222368968, guid: 08388844e21e4b544b62d16142c89c6b, type: 3}
+--- !u!1 &1615656975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1615656976}
+  m_Layer: 0
+  m_Name: TablePos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1615656976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615656975}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5128112, y: 0.48685178, z: -0.5128113, w: -0.48685178}
+  m_LocalPosition: {x: 2.0749989, y: -0.01999998, z: 0.04300022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111961265}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1616211710
 GameObject:
   m_ObjectHideFlags: 0
@@ -37731,6 +38101,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669070349}
   m_CullTransparentMesh: 1
+--- !u!1 &1673023785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1673023786}
+  m_Layer: 0
+  m_Name: TablePos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1673023786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673023785}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5128112, y: 0.48685178, z: -0.5128113, w: -0.48685178}
+  m_LocalPosition: {x: 1.65, y: -0.07, z: 2.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1991983946}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1673941474
 GameObject:
   m_ObjectHideFlags: 0
@@ -41736,6 +42137,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802127610}
   m_Mesh: {fileID: -3598478222368968, guid: 08388844e21e4b544b62d16142c89c6b, type: 3}
+--- !u!4 &1805436616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8921401724604877743, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 445051020}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1807914467
 GameObject:
   m_ObjectHideFlags: 0
@@ -42047,9 +42453,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 1044110527}
   waterTrigger: {fileID: 1693332728}
-  bedAnimations: []
+  bedAnimations:
+  - objectToMove: {fileID: 1805436616}
+    targetTransform: {fileID: 135753462}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - objectToMove: {fileID: 475521482}
+    targetTransform: {fileID: 1893085575}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   bedAnimationDuration: 0.5
-  waterAnimations: []
+  waterAnimations:
+  - objectToMove: {fileID: 64560613}
+    targetTransform: {fileID: 551333492}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
@@ -42086,6 +42504,9 @@ Transform:
   - {fileID: 1645316431}
   - {fileID: 2054347181}
   - {fileID: 370773813}
+  - {fileID: 551333492}
+  - {fileID: 1893085575}
+  - {fileID: 135753462}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1817892316
@@ -43845,6 +44266,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 128542809}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1893085574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893085575}
+  m_Layer: 0
+  m_Name: PillowPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1893085575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893085574}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.60952914, y: -0.30825332, z: -0.27822673, w: -0.6753104}
+  m_LocalPosition: {x: 1.5129995, y: 0.691, z: 2.363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1816881337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1895842657
 GameObject:
@@ -46109,9 +46561,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 1447106108}
   waterTrigger: {fileID: 1322849801}
-  bedAnimations: []
+  bedAnimations:
+  - objectToMove: {fileID: 2113409828}
+    targetTransform: {fileID: 2076443842}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - objectToMove: {fileID: 1313359431}
+    targetTransform: {fileID: 1201082041}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   bedAnimationDuration: 0.5
-  waterAnimations: []
+  waterAnimations:
+  - objectToMove: {fileID: 1276398496}
+    targetTransform: {fileID: 1673023786}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
@@ -46148,6 +46612,9 @@ Transform:
   - {fileID: 1772153508}
   - {fileID: 269209506}
   - {fileID: 77469098}
+  - {fileID: 1201082041}
+  - {fileID: 2076443842}
+  - {fileID: 1673023786}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992177452
@@ -48031,6 +48498,37 @@ Transform:
   - {fileID: 1159661180}
   m_Father: {fileID: 5442767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2060754061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2060754062}
+  m_Layer: 0
+  m_Name: PillowPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2060754062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060754061}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.60952914, y: -0.30825332, z: -0.27822673, w: -0.6753104}
+  m_LocalPosition: {x: 1.4329996, y: 0.691, z: 2.363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146041671}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2060785396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48336,6 +48834,37 @@ Transform:
   m_Children:
   - {fileID: 106522744}
   m_Father: {fileID: 2092859781}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2076443841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076443842}
+  m_Layer: 0
+  m_Name: PillowPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2076443842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076443841}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.60952914, y: -0.30825332, z: -0.27822673, w: -0.6753104}
+  m_LocalPosition: {x: 1.4110012, y: 0.68700004, z: 0.6989993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1991983946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2077278045
 GameObject:
@@ -49026,6 +49555,37 @@ Transform:
   - {fileID: 2075549021}
   m_Father: {fileID: 179610991}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2099518639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2099518640}
+  m_Layer: 0
+  m_Name: PillowPos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2099518640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099518639}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5882635, y: -0, z: -0, w: -0.8086694}
+  m_LocalPosition: {x: 2.429, y: 0.686, z: 2.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111961265}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2104198621
 GameObject:
   m_ObjectHideFlags: 0
@@ -49552,6 +50112,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112869307}
   m_Mesh: {fileID: -3598478222368968, guid: 08388844e21e4b544b62d16142c89c6b, type: 3}
+--- !u!4 &2113409828 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 721726392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2120001061
 GameObject:
   m_ObjectHideFlags: 0
@@ -49950,6 +50515,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!4 &2135383344 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 442014535211369618, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 1028771993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2137430865 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8549381915770302506, guid: 4599cb23ef793504aa5b8de38c7fb55c, type: 3}
+  m_PrefabInstance: {fileID: 1218280763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2139798462
 GameObject:
   m_ObjectHideFlags: 0
@@ -50135,6 +50710,9 @@ Transform:
   - {fileID: 270492716}
   - {fileID: 2029116982}
   - {fileID: 1237692614}
+  - {fileID: 1113954872}
+  - {fileID: 2060754062}
+  - {fileID: 493421462}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2146041672
@@ -50151,9 +50729,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bedTrigger: {fileID: 752074776}
   waterTrigger: {fileID: 1478459026}
-  bedAnimations: []
+  bedAnimations:
+  - objectToMove: {fileID: 913891580}
+    targetTransform: {fileID: 1113954872}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - objectToMove: {fileID: 2137430865}
+    targetTransform: {fileID: 2060754062}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   bedAnimationDuration: 0.5
-  waterAnimations: []
+  waterAnimations:
+  - objectToMove: {fileID: 172350623}
+    targetTransform: {fileID: 493421462}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
   waterAnimationDuration: 0.5
   minInterval: 5
   maxInterval: 10
