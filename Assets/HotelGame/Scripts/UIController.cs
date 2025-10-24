@@ -7,6 +7,6 @@ public class UIController : MonoBehaviour
 
     private void Update()
     {
-        _moneyText.text = WalletController.Instance.Money.ToString();
+        _moneyText.text = $"{WalletController.Instance.Money}<sprite name=\"brilliant\">";
     }
 }
